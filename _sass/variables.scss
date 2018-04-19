@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: 	"Sophisto",sans-serif !default;
+$base-font-size:   	16px !default;
+$base-font-weight: 	400 !default;
+$small-font-size:  	$base-font-size * 0.875 !default;
+$base-line-height: 	1.5 !default;
+
+$spacing-unit:     	30px !default;
+
+$background-color: 	#fdfdfd !default;
+$brand-color:      	#2a7ae2 !default;
+$white:							#ffffff !default;
+$black:							#454445 !default;
+$light-brown:				#F5F2DC !default;
+
+$text-color:       	$black !default;
+
+$grey-color:       	#828282 !default;
+$grey-color-light: 	lighten($grey-color, 40%) !default;
+$grey-color-dark:  	darken($grey-color, 25%) !default;
+
+$table-text-align: 	left !default;
+
+// Width of the content area
+$content-width:    	800px !default;
+
+$on-palm:          	600px !default;
+$on-laptop:        	800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+//Mixins
+//Graident Mixin
+//
+//Usage
+//.button{
+//    @include linearGradient(#cccccc, #666666);
+//}
+@mixin linearGradient($top, $bottom){
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+}
+
+//Box-shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+
+
+///////
+
+// Import partials.
+@import
+  "base",
+  "header",
+  "work"
+  //"layout",
+  //"syntax-highlighting"
+;

@@ -75,10 +75,11 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  
 }
 
 li {
+  list-style:none;
   > ul,
   > ol {
     margin-bottom: 0;
