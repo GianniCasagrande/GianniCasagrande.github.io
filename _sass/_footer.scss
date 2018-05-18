@@ -1,0 +1,21 @@
+/**
+ * Footer
+ */
+ .footer {
+ 	background-color:$grey-color;
+
+	.grid-container {
+	  display: grid;
+	  grid-template-columns: auto auto;
+	  grid-gap: 15px;
+	  grid-row-gap:15px;
+	  width:80%;
+	  max-width:700px;
+	  margin:0 auto;
+
+		div {
+	  	
+		}
+	}
+}
+
