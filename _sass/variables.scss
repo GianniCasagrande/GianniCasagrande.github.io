@@ -2,15 +2,16 @@
 
 // Define defaults for each variable.
 
-$base-font-family: 	"Sophisto",sans-serif !default;
-$base-font-size:   	16px !default;
+$base-font-family: 	"Asap",sans-serif !default;
+$heading-font-family:  "Sophisto",sans-serif !default;
+$base-font-size:   	14px !default;
 $base-font-weight: 	400 !default;
 $small-font-size:  	$base-font-size * 0.875 !default;
-$base-line-height: 	1.5 !default;
+$base-line-height: 	2 !default;
 
 $spacing-unit:     	30px !default;
 
-$background-color: 	#fdfdfd !default;
+$background-color: 	#fcfcfc !default;
 $brand-color:      	#2a7ae2 !default;
 $white:							#ffffff !default;
 $black:							#454445 !default;
@@ -81,7 +82,7 @@ $on-laptop:        	800px !default;
 @import
   "base",
   "header",
-  "work"
-  //"layout",
-  //"syntax-highlighting"
+  "footer",
+  "work",
+  "work-details"
 ;
