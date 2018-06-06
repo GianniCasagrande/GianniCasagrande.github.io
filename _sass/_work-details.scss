@@ -8,20 +8,24 @@
  	.detail-wrap {
  		width:80%;
 	  max-width:700px;
-	  margin:0 auto
+	  margin:7vh auto
  	}
 
 	.grid-container {
 	  display: grid;
-	  grid-template-columns: 475px auto;
-	  grid-gap: 20px;
-	  grid-row-gap:20px;
+	  grid-template-columns: auto;
+	  grid-gap: 4vw;
+	  grid-row-gap:7vh;
 	  width:80%;
 	  max-width:700px;
 	  margin:0 auto;
 
 	  &.highlights {
 			grid-template-columns: auto 475px;
+		}
+
+		&.spacer {
+			margin-bottom:7vh;
 		}
 	}
 
