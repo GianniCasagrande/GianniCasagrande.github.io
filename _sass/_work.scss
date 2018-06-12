@@ -34,6 +34,16 @@
 	  	@include box-shadow(0px, 0px, 5px, rgba(0, 0, 0, 0.1), false);
 		}
 
+		.work1 {
+			background-image:url('/assets/content-teaser.png');
+			background-size:cover;
+		}
+
+		.work2 {
+			background-image:url('/assets/filter-teaser.png');
+			background-size:cover;
+		}
+
 		.overlay {
 				opacity:0;
 				display: flex;
@@ -52,8 +62,22 @@
   			color:$white;
   			background-color:$black;
 
+  			h2 {
+  					color:$white;
+  					text-transform:capitalize;
+  					font-size:2vw;
+
+  					span {
+  						display:block;
+  						text-transform:uppercase;
+  						color:lighten($white, 10%);
+  						font-size:1vw;
+  					}
+  				}
+
 	  		&:hover {
-	  			opacity:0.7;
+	  			opacity:1.0;
+	  			background-color:rgba(0,0,0,0.7);
 	  			-webkit-transition: opacity .4s ease-out;
   				transition: opacity .4s ease-out;
 	  		}

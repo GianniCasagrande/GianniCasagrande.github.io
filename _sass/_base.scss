@@ -99,8 +99,8 @@ h1 {
 }
 
 h2 {
-  font-size:1.2vw;
-  font-weight:400;
+  font-size:1.4vw;
+  font-weight:700;
   color:lighten($text-color, 20%);
   text-transform:uppercase;
 }
@@ -115,6 +115,30 @@ h2 {
   text-align:center;
   align-items: center;
   justify-content: center;
+
+  h2 {
+    font-size:1.2vw;
+    font-weight:400;
+  }
+
+  &.contentui {
+    h1 {
+      color:rgba(65,126,81,1.0);
+    }
+  }
+
+  &.filter {
+    h1 {
+      color:#C14242;
+    }
+  }
+
+  &.confidence {
+    h1 {
+      color:#2B78E4;
+    }
+  }
+
 }
 
 
