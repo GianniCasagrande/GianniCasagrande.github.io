@@ -31,7 +31,6 @@ header {
 
  	.name {
  		text-transform:uppercase;
- 		font-size:2vw;
     font-family:"continuo", sans-serif;
     -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -44,7 +43,6 @@ header {
  		line-height:50px;
 
     .name {
-      font-size:1.3vw;
       line-height:50px;
     }
  	}
@@ -73,13 +71,11 @@ header {
      
      .icon {
       display:block; 
-      font-size:3.5vw;
       cursor:pointer;
     }
 
      .name {
       float:left!important;
-      font-size:2vw;
      }
   }
 };
@@ -109,12 +105,10 @@ header {
       display:inline-block;
       top:0;
       right:5.5vw;
-      font-size: 5vw;
     }
 
     a {
       display:block;
-      font-size:6vw;
       padding:0 3vh;
     }
 }
