@@ -16,10 +16,17 @@ header {
  	z-index:999;
  	padding:0 5vw;
  	text-align:center;
+  background-color:rgba(0,0,0,0.75);
+  color:$white;
  	/* animation magic */
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
+
+  a {
+    color:$white!important;
+    text-decoration:none;
+  }
 
  	.name {
  		text-transform:uppercase;
@@ -27,7 +34,6 @@ header {
  	}
 
  	&.shrink {
- 		background-color:rgba(255,255,255,0.75);
  		height:50px;
  		line-height:50px;
  	}

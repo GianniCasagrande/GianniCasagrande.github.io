@@ -1,6 +1,7 @@
 <section class="hero-text contentui">
 	<h1>Axonify Content UI</h1>
 	<h2>Research • Concept Creation • Visual Design • Prototyping • CSS Polish • Testing</h2>
+	<h2 class="blast">Released and being used</h2>
 </section>
 
 <section class="work-details contentui">
@@ -12,71 +13,76 @@
 	  <div class="grid-container">
 	  <div>
 	  	<h2>About</h2>
-			<p>The Axonify content management system is one of the core features of the platform. Users come here to create and manage all the microlearning content they want to serve their employees. Content can include different question types (multiple choice, multi-answer, matching, fill in the blank), SCORM modules, Video training, Surveys and Key performance indicators.</p>
+			<p>The Axonify content management system is a core component of the platform. Users come here to create and manage all microlearning and training content they want to serve their employees. Content can include different question types (multiple choice, multi-answer, matching, fill in the blank), SCORM modules, video training, surveys, behaviour observations, tasks and key learning points.</p>
 	  </div>
+
+	  <div class="grid-container">
+	  	<div>
+			<h2>Problem</h2>
+				<p>This was a re-vamp of the old CMS that I designed when we were a startup. The old iteration of content was showing its age as it was a very click intensive bulky UX. It was also not supporting industry training best practices around strategic planning & design, key learning points, change audits and peer reviews. I was tasked with re-designing how users dealt with content, with a heavy emphasis on quick creation and easy maintenance of content.</p>
+			</div>
+		</div>
 	</div>
 
 
-	<div class="img-thumb">
+	<div class="img-thumb no-stretch">
 		<img src={{ "/assets/product-shots.png" | relative_url }} />
 		<div class="img-meta">From Left: Content Creation Editor, "Hotspot" question UX</div>
 	</div>
 
-	<div class="grid-container highlights">
-		<h2>Problem</h2>
-		<div>
-			<p>The old iteration of content  was showing its age as it was a very click intensive bulky UX. The old iteration was also not supporting industry training design best practices around strategic planning, key learning points, change audits and reviewing.</p>
+		<div class="grid-container highlights spacer">
+			<h2>Constraints</h2>
+			<div>
+			<p>Had to respect the current content hierarchy setup (Category > Subject > Topic). I was not allowed to deviate from this as this was how most of our customers were creating content and migration would be too difficult. I also still needed to support a “click to edit and click to save” paradigm. Autosave was to large of a change from a server development point of view, especially for a v1.</p>
+			</div>
 		</div>
-		
-		<h2>Constraints</h2>
-			<p>Had to respect the current content hierarchy: Category > Subject > Topic
-			Still needed to support a “click to edit and click to save” paradigm. Autosave was to large of a change from a server development point of view, especially for a v1.</p>
-		</div>
-	</div>
 
-	<div class="img-thumb">
-		<img src="{{ "/assets/early_mocks.png" | relative_url }}"" />
-		<div class="img-meta">Early Mapping and Content Organization</div>
-	</div>
-
-	<div class="grid-container highlights">
+		<div class="grid-container highlights">
 		<h2>High-Level Goals</h2>
 		<div>
 			<ul>
 				<li>Streamlined content creation, editing and publishing </li>
 				<li>Bake in industry standards: training plan, key learning points</li>
-				<li>Integrated review process, including off platform reviews</li>
-				<li>Import & Export of content</li>
-				<li>Audit Trail</li>
+				<li>Integrated review process, including "off platform" user reviews i.e. lawyers</li>
+				<li>Import & Export of content from excel, pdf or word</li>
+				<li>Audit Trail with comments</li>
 				<li>Easy content retrieval and searching</li>
-			</ul>
-		</div>
-
-		<h2>Research</h2>
-		<div>
-			<ul>
-				<li>Client interviews, how were they creating content? Where they using industry standards?</li>
-				<li>Detailed persona creation with the PM team</li>
-				<li>Internal Instructional design interviews with Axonify Instructional design teams</li>
-				<li>Show me how the process works today</li>
-				<li>How do key learning points (KLPs) link to content and difficulty levels</li>
-				<li>How do you currently collaborating with customers</li>
-				<li>Is there anything missing from your current process?</li>
-				<li>Iterative design with ID and PM teams</li>
-				<li>UI prototype testing with internal and external stakeholders</li>
+				<li>This new layout would also be the base layout for all pages going forward.</li>
 			</ul>
 		</div>
 	</div>
 
-	<div class="img-thumb">
+	<div class="img-thumb no-stretch">
+		<img src="{{ "/assets/early_mocks.png" | relative_url }}"" />
+		<div class="img-meta">Early Mapping and Content Organization</div>
+	</div>
+
+<div class="grid-container highlights">
+		<h2>Research</h2>
+		<div>
+			<ul>
+					<li>Conducted client interviews: how were they creating content? Where they using industry standards? What pain points were they experiencing with the current UX? What was missing from the current setup?</li>
+					<li>Working with the Product Management team, we created user personas to design against.</li>
+					<li>Internal instructional design interviews with Axonify instructional design service teams</li>
+					<li>Discussed how key learning points (KLPs) link to content and content difficulty levels</li>
+					<li>Interviewed how they were currently collaborating with customers</li>
+					<li>Discussed What was missing from the current process from a strategy point of view</li>
+					<li>UX prototype testing with internal and external stakeholders</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="img-thumb no-stretch">
 		<img src="{{ "/assets/content-productshots.png" | relative_url }}"" />
-		<div class="img-meta">Snippets from UX from left: Topic Search, Multi-select menu, Content Reviewing, Training Plan, Audit & Commenting </div>
+		<div class="img-meta">UI Snippets from left: Topic Search, Multi-select menu, Content Reviewing, Training Plan, Audit & Commenting </div>
 	</div>
 
 	<div class="grid-container spacer">
 		<div>
 			<h2>Solution</h2>
-			<p>For the new content UI I opted for a 2 panel “live” view. Essentially each level would have details view with the ability to drill into a sub-view of that category. All editing and creation would be done in these views as well.</p>
+			<p>For the new content UI I opted for a 2 panel “live” view. When you select an item on the left, you could see the "detail" of that item on the right. Details can include simple meta items like name and ID all the way to complicated items like question previews and training videos - all inline. Detail panes had an activity and comment feed for accoutability.</p>
+			<p>
+			</p>
 		</div>
 	</div>
 
@@ -89,6 +95,7 @@
 				<li>Searching and Filtering of Content</li>
 				<li>Commenting and Auditing</li>
 				<li>Content review with review assignment</li> 
+				<li>Keyboard navigation</li>
 				<li>19+ language support</li>
 			</ul>
 		</div>

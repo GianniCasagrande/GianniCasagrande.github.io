@@ -6,3 +6,4 @@ $(document).on("scroll", function(){
 			$("header").removeClass("shrink");
 		}
 });
+

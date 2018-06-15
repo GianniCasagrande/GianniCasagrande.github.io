@@ -9,7 +9,6 @@ dl, dd, ol, ul, figure {
 }
 
 
-
 /**
  * Basic styling
  */
@@ -17,6 +16,8 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
+  background-image:url('/assets/squairy_light.png');
+  background-repeat:repeat;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -78,12 +79,17 @@ ul, ol {
 
 li {
   list-style:disc;
+  padding-bottom:1em;
+  list-style-position: inside;
   > ul,
   > ol {
     margin-bottom: 0;
   }
 }
 
+.spacer {
+  margin-bottom:7vh;
+}
 
 
 /**
@@ -96,19 +102,20 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size:3vw;
   font-weight:700;
+  line-height:1.5;
 }
 
 h2 {
   font-size:1.3vw;
-  color:lighten($text-color, 20%);
+  color:lighten($text-color, 30%);
   text-transform:uppercase;
 }
 
 
 .hero-text {
   max-width:60vw;
-  margin-top:23vh;
-  margin-bottom:10vh;
+  margin-top:15vh;
+  margin-bottom:3vh;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
@@ -118,6 +125,17 @@ h2 {
   h2 {
     font-size:1.2vw;
     font-weight:400;
+
+    &.blast {
+      font-weight:700;
+      line-height:3em;
+      font-size:1.4vw;
+    }
+  }
+
+  &.home {
+    margin-top:23vh;
+  margin-bottom:15vh;
   }
 
   &.contentui {
