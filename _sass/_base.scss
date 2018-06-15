@@ -80,7 +80,8 @@ ul, ol {
 li {
   list-style:disc;
   padding-bottom:1em;
-  list-style-position: inside;
+  list-style-position: outside;
+  line-height:1.7;
   > ul,
   > ol {
     margin-bottom: 0;
@@ -105,17 +106,33 @@ h1 {
   line-height:1.5;
 }
 
+@include breakpoint(laptop) {
+    h1 {font-size:3.3vw;}
+};
+
 h2 {
   font-size:1.3vw;
   color:lighten($text-color, 30%);
   text-transform:uppercase;
 }
 
+@include breakpoint(laptop) {
+    h2 {font-size:2vw;}
+};
+
+@include breakpoint(tablet) {
+    h2 {font-size:2.5vw;}
+};
+
+@include breakpoint(phablet) {
+    h2 {font-size:3.5vw;}
+};
+
 
 .hero-text {
   max-width:60vw;
-  margin-top:15vh;
-  margin-bottom:3vh;
+  margin-top:17vh;
+  margin-bottom:1vh;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
@@ -127,15 +144,15 @@ h2 {
     font-weight:400;
 
     &.blast {
-      font-weight:700;
       line-height:3em;
       font-size:1.4vw;
+      font-family:"continuo", sans-serif;
     }
   }
 
   &.home {
-    margin-top:23vh;
-  margin-bottom:15vh;
+    margin-top:19vh;
+  margin-bottom:10vh;
   }
 
   &.contentui {
@@ -163,6 +180,56 @@ h2 {
   }
 
 }
+
+@include breakpoint(laptop) {
+  .hero-text {
+    max-width:80vw;
+    margin-top:15vh;
+    margin-bottom:-2vh;
+    &.home {
+      margin-top:18vh;
+      margin-bottom:7vh;
+    }
+  }
+};
+
+@include breakpoint(tablet) {
+  .hero-text {
+    max-width:80vw;
+    margin-top:11vh;
+    margin-bottom:-4vh;
+    h1 {
+        font-size:4vw;
+      }
+    &.home {
+      margin-top:15vh;
+      margin-bottom:5vh;
+      h1 {
+        font-size:4vw;
+      }
+    }
+  }
+};
+
+@include breakpoint(phablet) {
+  .hero-text {
+    max-width:80vw;
+     margin-top:11vh;
+      margin-bottom:-2vh;
+
+      h1 {
+        font-size:4vw;
+      }
+    &.home {
+      margin-top:13vh;
+      margin-bottom:4vh;
+
+      h1 {
+        font-size:4vw;
+      }
+    }
+  }
+};
 
 
 /**
@@ -318,3 +385,11 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+
+@include breakpoint(tablet) {
+  p, li{
+    font-size:16px;
+  }
+};
+

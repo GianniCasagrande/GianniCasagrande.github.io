@@ -2,6 +2,7 @@
  * Site header
  */
 
+//Desktop Header
 header {
  	display: fixed;
  	justify-content: center;
@@ -19,9 +20,9 @@ header {
   background-color:rgba(0,0,0,0.75);
   color:$white;
  	/* animation magic */
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
 
   a {
     color:$white!important;
@@ -30,12 +31,22 @@ header {
 
  	.name {
  		text-transform:uppercase;
- 		font-size:1.3vw;
+ 		font-size:2vw;
+    font-family:"continuo", sans-serif;
+    -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
  	}
+
+  .icon {display:none;}
 
  	&.shrink {
  		height:50px;
  		line-height:50px;
+
+    .name {
+      font-size:1.3vw;
+      line-height:50px;
+    }
  	}
 
  	h1,h2 {
@@ -43,6 +54,8 @@ header {
             animation: fadein .5s;
   }
 }
+
+
 
 .pull-left {
 	float:left;
@@ -52,8 +65,61 @@ header {
 	float:right;
 }
 
- /* Animations */
+@include breakpoint(tablet) {
+  header {
+    height:50px;
+    line-height:50px;
+     .link {display:none;}
+     
+     .icon {
+      display:block; 
+      font-size:3.5vw;
+      cursor:pointer;
+    }
 
+     .name {
+      float:left!important;
+      font-size:2vw;
+     }
+  }
+};
+
+
+//Modal
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding:5vw;
+    left: 0;
+    top: 0;
+    right:0;
+    left:0;
+    height:100%;
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+    > div {
+      padding-top: calc(100% - 50%);
+    }
+
+    .close {
+      position:fixed;
+      display:inline-block;
+      top:0;
+      right:5.5vw;
+      font-size: 5vw;
+    }
+
+    a {
+      display:block;
+      font-size:6vw;
+      padding:0 3vh;
+    }
+}
+
+ /* Animations */
 /* Safari, Chrome and Opera > 12.1 */
 keyframes fadein {
     from { opacity: 0; }

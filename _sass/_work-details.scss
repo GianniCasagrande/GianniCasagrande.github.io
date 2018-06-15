@@ -90,16 +90,49 @@
 			}
 		}
 	}
+}
 
-	ul.key-points {
-		
-		li {
-			font-size:$base-font-size - 2px;
-			font-weight:bold;
+@include breakpoint(laptop) {
+	.work-details {
+		.grid-container {
+			width:80%;
+	  	max-width:600px;
+		}
+
+		.img-thumb {
+	  		&.no-stretch {
+	  			img{
+	  			width:100%;
+	  			height:auto;
+	  			}
+	  		}
+	  	}
+
+	}
+};
+
+@include breakpoint(tablet) {
+	.work-details {
+		.grid-container {
+			width:80%;
+	  	max-width:500px;
 		}
 	}
+};
 
-}
+@include breakpoint(tablet) {
+	.work-details {
+		.grid-container {
+
+			&.highlights {
+				grid-template-columns: auto;
+				grid-gap: 0;
+	  		grid-row-gap:0;
+		}
+			
+		}
+	}
+};
 
 
 /* Animations */

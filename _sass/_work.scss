@@ -27,33 +27,45 @@
 		> div {
 	  	background-color: white;
 	  	text-align: center;
-	  	height:550px;
 	  	position:relative;
 	  	align-items: center;
+	  	overflow:hidden;
+	  	height:calc(100%);
 	 
 	  	@include box-shadow(0px, 0px, 5px, rgba(0, 0, 0, 0.1), false);
+
+	  	img {
+	  		width:100%;
+	  		height:auto;
+	  		transform: scale(1,1);
+	  	}
 		}
 
+		/*
 		.work1 {
 			background-image:url('/assets/content-teaser.png');
-			background-size:cover;
+			background-size:contain;
+			background-repeat:no-repeat;
 			
 		}
 
 		.work2 {
 			background-image:url('/assets/filter-teaser.png');
-			background-size:cover;
+			background-size:contain;
+			background-repeat:no-repeat;
 		}
 
 		.work3 {
 			background-image:url('/assets/guided-teaser.jpg');
-			background-size:cover;
+			background-size:contain;
+			background-repeat:no-repeat;
 		}
 
 		.work4 {
 			background-image:url('/assets/confidence-teaser.jpg');
-			background-size:cover;
-		}
+			background-size:contain;
+			background-repeat:no-repeat;
+		}*/
 
 		.overlay {
 				opacity:0;
@@ -97,22 +109,25 @@
 	}
 }
 
-.about-me {
-	.grid-container {
-	  display: grid;
-	  grid-template-columns: 65% auto;
-	  grid-gap: 15px;
-	  grid-row-gap:15px;
-	  padding: 15px;
-	  width:80%;
-	  max-width:700px;
-	  margin:0 auto;
+@include breakpoint(tablet) {
+	.work-preview {
+    .grid-container {
+		  grid-template-columns: none;
 
-		> div {
-	  	background-color: white;
+		  .overlay {
+		  	h2 {
+		  		font-size:5vw;
+		  		line-height:1.5;
+
+		  		span {
+		  			font-size:3vw;
+		  		}
+		  	}
+		  }
 		}
 	}
-}
+ };
+
 
 /* Animations */
 

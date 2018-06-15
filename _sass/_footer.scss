@@ -2,20 +2,23 @@
  * Footer
  */
  .footer {
- 	background-color:$grey-color;
+ 	padding:2% 0;
+ 	background-color:$white;
+ 	margin:0 auto;
+ 	text-align:center;
+
+ 	p {
+ 		font-size:12px;
+ 	}
 
 	.grid-container {
 	  display: grid;
-	  grid-template-columns: auto auto;
-	  grid-gap: 15px;
-	  grid-row-gap:15px;
-	  width:80%;
-	  max-width:700px;
+	  grid-template-columns: auto auto auto auto auto auto;
+	  grid-gap: 1%;
+	  grid-row-gap:0;
+	  width:auto;
 	  margin:0 auto;
-
-		div {
-	  	
-		}
+	  text-align:center;
 	}
 }
 
