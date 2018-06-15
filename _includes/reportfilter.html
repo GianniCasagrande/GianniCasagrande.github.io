@@ -20,7 +20,7 @@
 	<div class="grid-container">
 	  <div>
 	  	<h2>Problem</h2>
-			<p>Working on a performance issue, server developers, had discovered that a single user had created 800 individual custom filters. Each filter was setup to view 1 single team. Why? Well a huge product gap was found, there was no easy way to search or filter for a singular team without creating a “custom filter” for that view. Not good. Custom filter creation is very intensive in the current iteration.<p>
+			<p>While working on a performance issue, server developers had discovered that a single user had created 800 individual custom filters. Each filter was setup to view 1 single team. Why? Well a huge product gap was found, there was no easy way to search or filter for a singular team without creating a “custom filter” for that view. Not good. Custom filter creation is very intensive in the current iteration. All the user wants to do is view a team.<p>
 	  </div>
 	</div>
 
@@ -41,8 +41,7 @@
 			<div>
 				<ul>
 					<li>Ability to find a singular item easily.</li>
-					<li>Filter one to many teams quickly, possibly in an ad-hoc way</li>
-					<li>Be able to create filters based on teams only</li>
+					<li>Filter one to many teams or items quickly, possibly in an ad-hoc way</li>
 					<li>Mobile friendly first, support for active on-the-go managers</li>
 					<li>Try to create a standalone component that can be used in other “appzones”</li>
 				</ul>
@@ -67,7 +66,7 @@
 
 		<h2>Scope Creep</h2>
 		<div>
-			<p>All platforms were using a different filter components to search and filter data. It was decided that we were going to try to create a single component that could be used globally over all “Appzones”. We were opening up the guts anyway!</p>
+			<p>All platforms were using a different filter components to search and filter data. It was decided that we were going to try to create a single component that could be used globally over all “Appzones”. Nail down mobile fist, then we would port it over to a desktop experience as well. We were opening up the guts anyway!</p>
 		</div>
 	</div>
 
@@ -76,32 +75,33 @@
 		<div class="img-meta">Early Sketches</div>
 	</div>
 
-	<div class="grid-container spacer">
-		<div>
-		<h2>User Testing</h2>
-		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS3ljDxats0STY7cbjJBD-lGSV0Qa-qbZP-wC09UK0SymDx7P0i5FPy9ZDhmbn8rJLybD2N-czzQ02a/embed?start=false&loop=true&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-	</div>
-	</div>
-
 
 	<div class="grid-container spacer">
 		<div>
 			<h2>Solution</h2>
-			<p>After leading some design meetings, it was decided to go with a search first approach. Being able to find a single team quickly was discovered to be pretty much 80% of the use cases. If the user needed to filter on more data, the idea was they could go into the advanced filter mode where they can view, edit or create new filters based on any criteria the platform offered.</p>
-			<p>After some testing and iterations, it was found that it would be great to filter quickly on any of the criteria easily. I beleived that this would prevent the creation of many custom filters, and if by chance found the data on a specific view helpful, the ability to easily save it as a custom filter would be added in.</p>
+			<p class="spacer">After leading some design meetings, it was decided to go with a search first approach. Being able to find a single team quickly was discovered to be pretty much 80% of the use cases. If the user needed to filter on more data, the idea was they could go into the advanced filter mode where they can view, edit or create new filters based on any criteria the platform offered.</p>
+			<p>After some testing and iterations, it was found that it would be great to filter quickly on any of the criteria easily. I beleived that this would prevent the creation of many custom filters, and if by chance the user found the data on a specific view helpful, the ability to easily save it as a custom filter would still exisit.</p>
 		</div>
 	</div>
 	
 	<div class="grid-container highlights">
-			<h2>Key Features</h2>
+			<h2>Key Experiences</h2>
 			<ul>
-				<li>Easily find a single team or filter in under 3 clicks</li>
+				<li>Easily find a single item under any criteria in under 3 clicks</li>
 				<li>Filter data quickly on any criteria, without having to create a filter</li>
-				<li>Quickly save any ad-hoc state into a reusable filter you can re-visit</li>
+				<li>Quickly save any ad-hoc state into a reusable filter you can re-use</li>
 				<li>Selected items and filters persist over multiple pages</li>
 				<li>Flexible UI design to support 19+ languages</li>
 			</ul>
 		</div>
+	</div>
+
+		<div class="grid-container spacer">
+		<div>
+		<h2>User Testing Results</h2>
+		<p>User images and names changed for privacy</p>
+		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS3ljDxats0STY7cbjJBD-lGSV0Qa-qbZP-wC09UK0SymDx7P0i5FPy9ZDhmbn8rJLybD2N-czzQ02a/embed?start=false&loop=true&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+	</div>
 	</div>
 
 	
