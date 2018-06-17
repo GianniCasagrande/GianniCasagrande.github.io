@@ -4,7 +4,11 @@
 
 .work-details {
  	padding:2% 0;
- 	opacity:0;
+ 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  				filter: alpha(opacity=0);
+  				-moz-opacity: 10;
+  				-khtml-opacity: 0;
+  				opacity: 0;
  	-webkit-animation: content-slide-up 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
           animation: content-slide-up 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
 
@@ -85,7 +89,7 @@
 		&.no-stretch {
 			img {
 				width:auto;
-				height:100%;
+				height:auto;
 			}
 		}
 	}
