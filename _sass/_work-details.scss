@@ -72,14 +72,14 @@
 		margin:50px 0;
 
 		img {
-			width:100%;
+			width:auto;
 			height:auto;
 		}
 
 		.img-meta {
 			text-transform:uppercase;
- 			color:lighten($text-color, 20%);
- 			font-weight:700;
+ 			color:lighten($text-color, 25%);
+ 			font-size:80%;
 		}
 
 		&.no-stretch {
