@@ -97,7 +97,8 @@
   					}
   				}
 
-	  		&:hover {
+	  		&:hover,
+	  		&:focus {
 	  			opacity:1.0;
 	  			background-color:rgba(0,0,0,0.8);
 	  			-webkit-transition: opacity .4s ease-out;

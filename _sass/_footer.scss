@@ -22,3 +22,10 @@
 	}
 }
 
+@include breakpoint(phablet) {
+  .footer
+  	.grid-container {
+  		font-size:70%;
+  	}
+  }
+
