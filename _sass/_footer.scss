@@ -9,13 +9,12 @@
 
  	.meta {
  		font-size:12px;
- 		line-height:1.5;
  	}
 
 	.grid-container {
 	  display: grid;
 	  grid-template-columns: auto auto auto auto;
-	  grid-gap: 1%;
+	  grid-gap: 0;
 	  grid-row-gap:0;
 	  width:auto;
 	  margin:0 auto;
@@ -26,10 +25,10 @@
 	.grid-container-home {
 		display: grid;
 	  grid-template-columns: 50% 50%;
-	  grid-gap: 1%;
+	  grid-gap: 0;
 	  grid-row-gap:0;
 	  width:100%;
-
+	  line-height:1.5;
 	}
 
 	.left {
