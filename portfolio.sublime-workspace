@@ -4,16 +4,20 @@
 		"selected_items":
 		[
 			[
+				"w",
+				"width"
+			],
+			[
 				"mar",
-				"margin\tproperty"
+				"margin-top"
+			],
+			[
+				"ba",
+				"background-size"
 			],
 			[
 				"pa",
 				"padding-right\tproperty"
-			],
-			[
-				"w",
-				"width\tproperty"
 			],
 			[
 				"te",
@@ -58,10 +62,6 @@
 			[
 				"marg",
 				"margin"
-			],
-			[
-				"ba",
-				"background-color"
 			],
 			[
 				"border",
@@ -336,9 +336,11 @@
 	"buffers":
 	[
 		{
+			"file": "_includes/head.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 1211,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -392,10 +394,41 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/gcasagrande/portfolio"
+		"/Users/gcasagrande/portfolio",
+		"/Users/gcasagrande/portfolio/_includes",
+		"/Users/gcasagrande/portfolio/_layouts",
+		"/Users/gcasagrande/portfolio/_sass"
 	],
 	"file_history":
 	[
+		"/Users/gcasagrande/portfolio/_includes/header.html",
+		"/Users/gcasagrande/portfolio/_sass/_header.scss",
+		"/Users/gcasagrande/portfolio/_includes/footer.html",
+		"/Users/gcasagrande/portfolio/_includes/work.html",
+		"/Users/gcasagrande/portfolio/_layouts/confidence.html",
+		"/Users/gcasagrande/portfolio/_layouts/reportfilter.html",
+		"/Users/gcasagrande/portfolio/_layouts/contentui.html",
+		"/Users/gcasagrande/portfolio/_includes/footer-details.html",
+		"/Users/gcasagrande/portfolio/_includes/confidence.html",
+		"/Users/gcasagrande/portfolio/_includes/guidedlearning.html",
+		"/Users/gcasagrande/portfolio/_includes/contentui.html",
+		"/Users/gcasagrande/portfolio/_includes/reportfilter.html",
+		"/Users/gcasagrande/portfolio/_sass/_base.scss",
+		"/Users/gcasagrande/portfolio/_sass/_work.scss",
+		"/Users/gcasagrande/portfolio/_sass/_footer.scss",
+		"/Users/gcasagrande/portfolio/_includes/head.html",
+		"/Users/gcasagrande/portfolio/_sass/_work-details.scss",
+		"/Users/gcasagrande/portfolio/assets/scripts.js",
+		"/Users/gcasagrande/portfolio/_includes/matching.html",
+		"/Users/gcasagrande/portfolio/README.md",
+		"/Users/gcasagrande/portfolio/_config.yml",
+		"/Users/gcasagrande/portfolio/assets/main.scss",
+		"/Users/gcasagrande/portfolio/Gemfile",
+		"/Users/gcasagrande/portfolio/_layouts/guided.html",
+		"/Users/gcasagrande/portfolio/_layouts/matching.html",
+		"/Users/gcasagrande/portfolio/_sass/variables.scss",
+		"/Users/gcasagrande/portfolio/_layouts/default.html",
+		"/Users/gcasagrande/portfolio/_layouts/details.html",
 		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/training/client/apps/training/templates/DzLinkContentTemplate.html",
 		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/common/prerequisites/assets/stylesheets/typography.less",
 		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/common/prerequisites/assets/stylesheets/resets.less",
@@ -495,39 +528,11 @@
 		"/private/etc/hosts",
 		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/apps/common/colorLegend/ColorLegendInline.less",
 		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/apps/teamMetrics/common/categoryFilter/CategoryFilter.less",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/apps/teamMetrics/teamStats/TeamStats.less",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/apps/teamMetrics/common/categoryFilter/CategoryFilterItemView.html",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/apps/messages/templates/Index.html",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/common/components/sort_selector/SortSelector.coffee",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/apps/common/observationsBaseController/observation.less",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/public/dev/common/components/sort_selector/sort-selector.less",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/components/search_box/SearchBoxTemplate.html",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/common/components/forms/editors/monthYearSelector/MonthYearSelector.less",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/components/filter_group/FilterGroupSummaryView.coffee",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/common/components/forms/editors/monthYearSelector/Form.Editor.MonthYearSelector.coffee",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/common/components/tabbed_layout/tabbed-layout.less",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/components/hierarchy_selector/HierarchySelector.coffee",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/components/filterable_selector/FilterableSelector.coffee",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/components/filter_group/FilterGroupLayout.coffee",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/public/dev/common/prerequisites/assets/stylesheets/resets.less",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/apps/teamMetrics/index/Index.less",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/components/hierarchy_selector/hierarchy-selector.less",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/assets/strings/en/str.coffee",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/admin/client/apps/main/templates/settings/app_zones/hub_row.html",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/admin/client/libs/UIKit/Form.Editor.Switch.coffee",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/training/client/apps/auth/templates/ActivateAccountPage.html",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/training/client/apps/auth/templates/ResetPasswordPage.html",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/training/client/apps/auth/templates/SelfRegistrationPage.html",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/training/client/apps/training/templates/assessments/AssessmentResultPage.html",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/training/client/apps/training/templates/assessments/SelectAssessmentPage.html",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/training/client/apps/training/templates/QuestionSuggestion.html",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/training/client/apps/mobile/templates/ProfilePage.html",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/knowledge/client/apps/knowledgeBase/page/TitleView.coffee",
-		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/knowledge/client/apps/main/menu/NavMenuTemplate.html"
+		"/Users/gcasagrande/source/thunderball/axonify-client-web/src/main/html/manager/client/apps/teamMetrics/teamStats/TeamStats.less"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -541,6 +546,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"opacity",
+			"opactiy",
+			"h2",
+			"h1",
+			"font-size",
+			"H1",
+			"github",
+			"blast",
+			"h2",
+			"calc",
+			"li",
+			"h2",
+			"spacer",
+			"p",
+			"ul",
+			"li",
+			"hero",
+			"h1",
+			"hero"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -563,23 +587,26 @@
 			[
 				{
 					"buffer": 0,
+					"file": "_includes/head.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1211,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1202,
+								1202
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -826,7 +853,7 @@
 				"@certification"
 			]
 		],
-		"width": 683.0
+		"width": 821.0
 	},
 	"selected_group": 0,
 	"settings":

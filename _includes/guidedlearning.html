@@ -16,7 +16,7 @@
 		  </div>
 		  <div>
 		  <h2>Problem</h2>
-		  <p>I was tasked with coming up with how a guided learning path was created. This flow, which is visible to the user on the front end, would be a predefined list populated with topics and tasks a user needs to complete in order to fulfill job requirements. Like a tech tree, topics and tasks can be gated and locked until other items have been passed or graduated.</p>
+		  <p>I was tasked with coming up with how a Admin user would create a guided learning path. This flow, (which will be visible on the front end v2), would be a defined list populated with topics and tasks a user needs to complete in order to fulfill job requirements. Like a tech tree, topics and tasks can be gated and locked until other items have been passed or graduated.</p>
 			</div>
 	 	</div>
 
@@ -28,7 +28,7 @@
 	<div class="grid-container highlights spacer">
 			<h2>Constraints</h2>
 			<div>
-			<p>With only a few EAP customers, I was asked to not design any net new UX. It was decided we needed to somehow enhance the current UX/UI with the guided learning MVP. This way we could get it out quicker to our EAP customers to test with their employee base. If successful, Im sure a more robust component would be required.</p>
+			<p>With only a few EAP customers, I was asked to not design any net new UI. It was decided we needed to somehow enhance and retrofit the current UX/UI with the guided learning MVP. This way we could get it out quicker to our EAP customers to test with their employee base. If successful, Im sure a more robust component would be required.</p>
 			</div>
 
 			<h2>Scope Creep</h2>
@@ -72,7 +72,16 @@
 		<div>
 			<h2>Solution</h2>
 			<p class="spacer"><strong>For task creation:</strong> This was a no brainer. Put it in our brand new contentUI. It was designed to be scalable, so adding task in as another content type worked out great. In fact, most of the functionality was already built in other components.</p>
+		</div>
+	</div>
 
+		<div class="img-thumb">
+			<img src={{ "/assets/task-creation.jpg" | relative_url }} />
+			<div class="img-meta">Task creation in Content UI</div>
+		</div>
+
+<div class="grid-container spacer">
+		<div>
 			<p><strong>For “Guided Learning” creation:</strong><i>This was a tough one.</i> After some ideation I came up with a floating toolbar idea that would only appear on hover. The idea is that an admin really does not need to see UI controls until he/she needs to manipulate a specific item. By hiding the controls, I was able to really keep the existing UI clean. In fact, I was able to hide some existing items slimming it down even more.</p>
 			<p>When you are just looking at the program, it gives you a clear view of how the training for that selected group is going to look like. This was also something that we never had before.</p>
 		</div>
@@ -96,11 +105,6 @@
 	<div class="img-thumb">
 			<img src={{ "/assets/usage.gif" | relative_url }} />
 			<div class="img-meta">Artifact: how tile linking works</div>
-		</div>
-
-		<div class="img-thumb">
-			<img src={{ "/assets/task-creation.jpg" | relative_url }} />
-			<div class="img-meta">Task creation in Content UI</div>
 		</div>
 
 

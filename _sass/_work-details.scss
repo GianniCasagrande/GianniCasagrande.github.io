@@ -4,11 +4,6 @@
 
 .work-details {
  	padding:2% 0;
- 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  				filter: alpha(opacity=0);
-  				-moz-opacity: 10;
-  				-khtml-opacity: 0;
-  				opacity: 0;
  	-webkit-animation: content-slide-up 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
           animation: content-slide-up 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
 
@@ -16,8 +11,6 @@
   	-webkit-animation: content-slide-up 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
           animation: content-slide-up 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
   }
-
-
 
  	&.contentui {
  		h2 {
@@ -142,12 +135,18 @@
 
 @-webkit-keyframes content-slide-up {
   0% {
+  	filter: alpha(opacity=0);
+		-moz-opacity:0;
+		-khtml-opacity: 0;
     opacity: 0;
     -webkit-transform: translateY(4rem);
             transform: translateY(4rem);
   }
   100% {
-    opacity: 1;
+  	filter: alpha(opacity=100);
+		-moz-opacity:100;
+		-khtml-opacity: 1.0;
+    opacity: 1.0;
     -webkit-transform: none;
             transform: none;
   }
