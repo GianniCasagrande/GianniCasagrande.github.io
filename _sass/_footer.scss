@@ -3,9 +3,20 @@
  */
  .footer {
  	padding:2% 5%;
- 	background-color:$white;
  	margin:0 auto;
  	text-align:center;
+ 	padding:4em 5vw 4em 5vw;
+ 	-webkit-clip-path: polygon(0 0, 2500px 100px, 2500px 100%, 0 100%);
+  clip-path: polygon(0 0, 2500px 100px, 2500px 100%, 0 100%);
+
+ 	background: #8e9eab;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left top, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left top, #eef2f3, #c7d0d5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ 	svg {
+			font-size:1.5em;
+			padding:1vh 1vw;
+		}
 
  	.meta {
  		font-size:12px;
@@ -13,7 +24,7 @@
 
 	.grid-container {
 	  display: grid;
-	  grid-template-columns: auto auto auto auto;
+	  grid-template-columns: auto auto auto auto auto;
 	  grid-gap: 0;
 	  grid-row-gap:0;
 	  width:auto;
@@ -40,28 +51,43 @@
 	}
 
 @include breakpoint(laptop) {
+	.footer {
+		padding:2em 5vw 4em 5vw;
 	.grid-container {
 	  grid-template-columns: 50% 50%!important;
 	  grid-row-gap:5px;
-	  font-size:80%;
 	}
+}
 };
 
 
 @include breakpoint(tablet) {
+	.footer {
+		padding:2em 5vw 0em 5vw;
 	.grid-container {
 	  grid-template-columns: 100%!important;
 	  grid-row-gap:5px;
-	  font-size:80%;
+	}
 	}
 };
 
 
 @include breakpoint(phablet) {
+	.footer {
+		padding:4vh 5vw 0 5vw;
+
+		p {
+			font-size:1em;
+		}
+
+		svg {
+			font-size:1.5em;
+			padding:2vh 2vw;
+		}
 	.grid-container {
 	  grid-template-columns: 100%!important;
 	  grid-row-gap:5px;
-	  font-size:80%;
+	}
 	}
 };
 

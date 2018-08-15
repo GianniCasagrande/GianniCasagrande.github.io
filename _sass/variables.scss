@@ -2,20 +2,23 @@
 
 // Define defaults for each variable.
 
-$base-font-family: 	"europa",sans-serif !default;
-$heading-font-family:  "europa",sans-serif !default;
-$base-font-size:   	18px !default;
-$base-font-weight: 	400 !default;
+$base-font-family: 	"merriweather",sans-serif !default;
+$heading-font-family:  "calluna-sans",sans-serif !default;
+$base-font-size:   	16px !default;
+$base-font-weight: 	200 !default;
 $small-font-size:  	$base-font-size * 0.875 !default;
 $base-line-height: 	2 !default;
 
 $spacing-unit:     	30px !default;
 
-$background-color: 	#f8f8f8 !default;
-$brand-color:      	#2a7ae2 !default;
+$background-color: 	#f3f3f3 !default;
+$brand-color:      	#8e9eab !default;
 $white:							#ffffff !default;
 $black:							#454445 !default;
 $light-brown:				#F5F2DC !default;
+
+$darkbrand:         darken($brand-color, 25%) !default;
+$lightbrand:        lighten($brand-color, 25%) !default;
 
 $text-color:       	$black !default;
 

@@ -1,25 +1,27 @@
 <section class="hero-text home">
-	<img src="{{ "/assets/gianni.jpg" | relative_url }}" />
-	<h1>Currently Senior UX/UI @ <a href="http://www.axonify.com" target="_blank">Axonify</a></h1>
-	<h2 class="teaser"><a href="http://www.billingshockey.com" target="_blank">Beer League Hockey Player</a> at night</h2>
+	<img class="jello-vertical" src="{{ "/assets/gianni.jpg" | relative_url }}" />
+	<h1><span>Currently Senior UX/UI @ <a href="http://www.axonify.com" target="_blank">Axonify</a></span></h1>
+	<p>UX/UI Designer based in Waterloo, Ontario <br />
+		<span class="emoji">&#x1F3D2</span>Half-Clapper, Top Cheddar <span class="emoji">&#x1F945</span>
+	</p>
 </section>
 
 <section class="work-preview">
   <div class="grid-container">
-	  <div class="work2 trigger">
-	  	<a href="{% link search-and-filtering/index.html %}">
-	  		<img src="{{ "/assets/filter-teaser.png" | relative_url }}" />
+  	<div class="work1">	
+	  	<a href="{% link contentui/index.html %}">
+	  		<img src="{{ "/assets/content-teaser.jpg" | relative_url }}" />
 	  		<div class="overlay">
-	  			<h2>Search & Data Filtering<span>Mobile first approach</span></h2>
+	  			<h2>Content UI<span>Content management system</span></h2>
 	  		</div>
 	  	</a>
 	  </div>
 
-	  <div class="work1">	
-	  	<a href="{% link contentui/index.html %}">
-	  		<img src="{{ "/assets/content-teaser.png" | relative_url }}" />
+	  <div class="work2 trigger">
+	  	<a href="{% link search-and-filtering/index.html %}">
+	  		<img src="{{ "/assets/filter-teaser.jpg" | relative_url }}" />
 	  		<div class="overlay">
-	  			<h2>Content UI<span>Content management system</span></h2>
+	  			<h2>Search & Data Filtering<span>Mobile first approach</span></h2>
 	  		</div>
 	  	</a>
 	  </div>
@@ -41,6 +43,16 @@
 	  		</div>
 	  	</a>
 	  </div>
+
+	  <div class="work5">
+	  	<a href="{% link misc/index.html %}">
+	  		<img src="{{ "/assets/odds-teaser.jpg" | relative_url }}" />
+	  		<div class="overlay">
+	  			<h2>Odds n' Ends<span>Logos and misc items</span></h2>
+	  		</div>
+	  	</a>
+	  </div>
+
 	</div>
 
 </section>
